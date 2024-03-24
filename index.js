@@ -26,6 +26,9 @@ const vm = Vue.createApp({
         if(this.user !== ""){
         this.open = !this.open
         }
+        if(this.user === "Hugo" || this.user === "hugo"){
+           this.msgBienvenida = "Los Hugo no entran"
+        }
         else{
            this.msgBienvenida = "Usuario no valido"
         }
