@@ -23,11 +23,11 @@ const vm = Vue.createApp({
     },
     methods:{
       puerta(){
-        if(this.user !== ""){
-        this.open = !this.open
+        if(this.user == "Hugo" || this.user == "hugo"){
+          this.msgBienvenida = "Los Hugo no entran"
         }
-        if(this.user === "Hugo" || this.user === "hugo"){
-           this.msgBienvenida = "Los Hugo no entran"
+        else if(this.user !== ""){
+        this.open = !this.open
         }
         else{
            this.msgBienvenida = "Usuario no valido"
